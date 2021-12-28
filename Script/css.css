@@ -1,0 +1,59 @@
+:root{
+  --cinza1: #181818;
+  --cinza2: #3c3c3c;
+  --cinza3: #666;
+  background: var(--cinza1);
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.Topo{
+  background-color: var(--cinza3);
+  height: 5vw;
+  padding-left: 10vw;
+}
+.Topo::before{
+  content: " ";
+  display: inline-block;
+  width: 5vw;
+  aspect-ratio:1;
+  position:relative;
+  left: -10vw;
+  background: linear-gradient(to top right, var(--cinza2) 50%, var(--cinza3) 50%);
+}
+.Item{
+  display: inline-block;
+  background: var(--cinza2);
+  border-radius: 50%;
+  width: 2vw;
+  aspect-ratio:1;
+}
+p{
+  margin: auto;
+}
+.💪{
+  display: flex;
+  flex: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.LeftMenu{
+  background: var(--cinza2);
+  width: 5vw;
+  height: 95vh;
+}
+.Corpo{
+  margin:auto;
+}
+.Grid{
+	display: grid;
+	grid: 25vh 25vh / 25vh 25vh;
+}
+.quadradao{
+	margin: auto;
+	width: 10vh;
+	aspect-ratio:1;
+	border: solid 6px #fff;
+}
